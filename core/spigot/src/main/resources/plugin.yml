@@ -1,0 +1,5 @@
+name: CoreSpigot
+version: 1.0.0
+main: com.ascend.core.spigot.CoreSpigotPlugin
+author: [PxxdroBits, LuisSantini]
+load: STARTUP
