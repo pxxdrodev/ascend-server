@@ -14,5 +14,3 @@ This repository is kept online for reference only.
 ## Preview
 
 **Infection Soup** was a brand-new minigame that remained **unfinished** before the project was abandoned.
-
-[▶ Watch the preview](./video/video.mp4)
