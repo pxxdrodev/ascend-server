@@ -1,0 +1,5 @@
+name: GameSpigot
+main: com.ascend.game.spigot.InfectionSoupPlugin
+version: 1.0.0
+author: PxxdroDev
+depend: [CoreSpigot]

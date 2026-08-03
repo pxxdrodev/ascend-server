@@ -1,0 +1,10 @@
+# Default configuration for InfectionSoup
+# Adjust values as needed
+# Example settings:
+# game-time: 600 # seconds
+# max-players: 32
+# start-preparation: 10 # seconds
+# infection-snowball-cooldown: 3
+# supply-drop-interval: 120 # seconds
+# enable-double-damage-event: true
+# enable-blood-moon-event: true

@@ -1,0 +1,5 @@
+name: LobbyPlugin
+version: 1.0.0
+main: com.ascend.lobby.spigot.LobbyPlugin
+author: [PxxdroBits, LuisSantini]
+load: POSTWORLD
