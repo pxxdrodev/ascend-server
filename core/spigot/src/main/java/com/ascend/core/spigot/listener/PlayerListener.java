@@ -24,14 +24,11 @@ public class PlayerListener implements Listener {
     public void onPlayerJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
 
-        // Rank — Redis cache → MongoDB fallback
         Rank rank = TagManager.getPlayerRank(player);
 
-        // Tag — Redis cache → MongoDB fallback
         Tag tag = TagManager.getPlayerTag(player);
         if (tag == Tag.MEMBRO) tag = Tag.fromRank(rank);
 
-        // Permissões dinâmicas acumulativas pelo Rank
         PermissionAttachment attachment = player.addAttachment(CoreSpigotPlugin.getInstance());
         ATTACHMENTS.put(player.getUniqueId(), attachment);
         for (Rank r : Rank.values()) {
@@ -39,8 +36,6 @@ public class PlayerListener implements Listener {
                 attachment.setPermission(r.getPermission(), true);
             }
         }
-
-        // Aplica a Tag e ajusta a ordem no Tablist via Scoreboard Teams
         TagManager.applyTag(player, tag);
         TabHeaderFooter.send(player);
     }
